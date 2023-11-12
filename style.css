@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap");
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Roboto Condensed', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  color: black;
+  height: 100vh;
+  width: 100%;
+}
+
+.logo img {
+  width: 170px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  padding: 0 150px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+}
+nav ul li {
+  list-style-type: none;
+  
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+  border: none;
+  padding: 6px;
+  border-radius: 8px;
+}
+
+nav ul li a:hover{
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.bit-32 {
+  background-color: rgb(9, 166, 189);
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.bit-64 {
+  background-color: rgb(129, 199, 128);
+  color: white;
+  border-radius: 7px;
+  padding: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 285px 285px 285px;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  gap: 85px;
+}
+.container h3{
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container p{
+  text-align: center;
+}
+
+@media screen and (max-width: 1050px) {
+  .container{
+    display: grid;
+    grid-template-columns: 275px 275px;
+  }
+}
+@media screen and (max-width: 885px) {
+  nav{
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 654px){
+  .container{
+    display: grid;
+    grid-template-columns: 275px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  nav{
+    flex-direction: column;
+    justify-content: space-around;
+    height: 20vh;
+  }
+  nav ul{
+    gap: 10px;
+  }
+}
